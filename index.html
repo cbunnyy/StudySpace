@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySpace | Productivity Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>StudySpace ✦</h1>
+        <p>Your personal productivity space.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <h2>Welcome back!</h2>
+            <p>Make today count. One task at a time.</p>
+        </section>
+
+        <section class="stats">
+            <div class="card">
+                <p>Total Tasks</p>
+                <h2 id="totalTasks">0</h2>
+            </div>
+
+            <div class="card">
+                <p>Completed</p>
+                <h2 id="completedTasks">0</h2>
+            </div>
+
+            <div class="card">
+                <p>Progress</p>
+                <h2 id="progress">0%</h2>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Today's Tasks</h2>
+
+            <form id="taskForm">
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="What do you need to do?"
+                    required
+                >
+
+                <button type="submit">Add Task +</button>
+            </form>
+
+            <ul id="taskList"></ul>
+        </section>
+
+        <section class="panel">
+            <h2>Daily Goals</h2>
+
+            <form id="goalForm">
+                <input
+                    type="text"
+                    id="goalInput"
+                    placeholder="Enter your daily goal"
+                    required
+                >
+
+                <button type="submit">Add Goal +</button>
+            </form>
+
+            <ul id="goalList"></ul>
+        </section>
+
+        <section class="panel timer">
+            <h2>Focus Timer</h2>
+
+            <div id="timerDisplay">25:00</div>
+
+            <div class="timer-buttons">
+                <button id="startTimer">Start</button>
+                <button id="pauseTimer">Pause</button>
+                <button id="resetTimer">Reset</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>StudySpace © 2026 | Keep growing ✦</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
